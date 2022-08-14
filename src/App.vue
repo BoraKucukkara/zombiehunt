@@ -6,7 +6,7 @@
                     <img style="width:200px" src="./assets/zombie.webp"/>
                     <h2 class="display-4 fw-bolder">OMG! THERE IS A ZOMBIE ON THE ROAD!</h2>
                     <button @click="start_game" class="btn bg-gradient btn-lg w-50 p-3 btn-danger">DEFEAT IT!!</button>
-                    <p class="mt-4 text-secondary">Mini game by Bora Kucukkara</p>
+                    <p class="mt-4 text-secondary">Mini game by <a href="https://github.com/BoraKucukkara/zombiehunt">Bora Kucukkara</a></p>
                 </div>
                 <div v-if="is_attack" class="col m-auto text-center">
                     <!-- HEALTH BAR -->
