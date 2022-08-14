@@ -1,4 +1,9 @@
 # zombiehunt
+Mini game - turn based zombie hunt
+
+## Made with Vue.js
+
+
 
 ## Project setup
 ```

@@ -1,0 +1,158 @@
+body {
+    background: linear-gradient(180deg, rgb(253, 247, 231) 0%, rgba(255,255,255,1) 100%) !important;
+}
+    .healthbar {
+        background-color: brown;
+        color: wheat;
+        height: 2rem;
+        line-height: 2rem;
+        transition: all 0.3s;
+        border-radius: 3px;
+        font-weight: bold;
+        text-align: center;
+        overflow: hidden;
+    }
+    .healthbarbox {
+        background-color: #e1e1e1;
+        padding: 2px;
+        border-radius: 5px;
+    }
+    .zombie img {
+        height: 8rem;
+        transition: all 0.5s;
+    }
+    .zombie h4 {
+        color: darkgreen;
+        font-weight: bolder;
+    }
+
+    .player img {
+        height: 8rem;
+    }
+
+    .player h4 {
+        color: brown;
+        font-weight: bolder;
+    }
+    .became_zombie {
+        -webkit-transform: scaleX(-1);
+        transform: scaleX(-1);
+        filter: saturate(3);
+        animation: slide-z 0.5s backwards;
+    }
+    .btn-skill {
+        width: 6rem;
+        height: 6rem;
+        border-radius: 10rem !important;
+        font-size: 1.0rem;
+        font-weight: bolder;
+        line-height: 1.2rem;
+        transition: all 0.2s;
+    }
+    .btn-skill:active {
+        animation: attack 0.2s linear;
+    }
+@keyframes attack {
+    0% {
+        transform:scale(100%,100%);
+    }
+    50% {
+        transform:scale(110%,110%);
+    }
+    100% {
+        transform:scale(100%,100%);
+    }
+}
+.btn-skill span {
+        margin-top: 0.5rem;
+    }
+    .zombie_down {
+        filter: saturate(00%);
+        transform: rotate(-70deg);
+    }
+    .arena {
+    }
+
+    button {
+        border-radius: 50px !important;
+        margin: 3px !important;
+        box-shadow: 0px 0px 0px 5px rgb(0 0 0 / 0.0) !important;
+        transition: all 0.1s;
+
+    }
+    button:active {
+        border-radius: 50px !important;
+        margin: 3px !important;
+        /*box-shadow: 0px 0px 0px 30px rgb(0 0 0 / 0.1) !important;*/
+    }
+
+    .turn_player {
+        color: darkgreen;
+        font-weight: bolder;
+        font-size: 0.9rem;
+        border-bottom: 2px solid #eaeaea;
+    }
+    li:nth-child(odd) {
+
+    }
+    .turn_player span {
+        background-color: darkgreen;
+        padding: 2px 5px 2px 5px;
+        border-radius: 50px;
+        color: #ffffff;
+    }
+    .turn_player i {
+        margin-right: -3px;
+    }
+
+    .turn_zombie {
+        color: #cc2a2a;
+        font-weight: bolder;
+        font-size: 0.9rem;
+    }
+
+    .turn_zombie span {
+        background-color: #d22c2c;
+        padding: 2px 5px 2px 5px;
+        border-radius: 3px;
+        color: white;
+    }
+
+    ul {
+        display: flex !important;
+        flex-direction: column-reverse !important;
+        padding: 0;
+    }
+
+    ul:before {
+        width: 5px;
+        height: 20px;
+        background-color: #e1e1e1 !important;
+    }
+
+    li {
+        flex: 0 0 auto;
+        list-style: none;
+        padding: 0.5rem;
+        animation: slide 0.5s forwards;
+    }
+
+@keyframes slide {
+    0% {
+        opacity: 0%;
+        transform:translateX(5%);
+    }
+    100% {
+        transform:translateX(0%);
+    }
+}
+@keyframes slide-z {
+    0% {
+        filter: blur(1rem);
+        opacity: 0%;
+    }
+    100% {
+        filter: blur(0rem);
+        opacity: 100%;
+    }
+}
